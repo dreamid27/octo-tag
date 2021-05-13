@@ -4,6 +4,7 @@ import clear from "clear";
 import figlet from "figlet";
 import git from "./lib/git.js";
 import inquirer from "./lib/inquirer.js";
+import minimist from "minimist";
 
 clear();
 
@@ -13,7 +14,13 @@ console.log(
 
 const run = async () => {
   try {
-    const environmentUser = await inquirer.askEnvironment();
+    const argParams = minimist(process.argv.slice(2));
+
+    let environmentUser = await inquirer.askEnvironment();
+    environmentUser = {
+      ...environmentUser,
+      prefix: argParams.prefix || "v",
+    };
     const tagging = await git.getNextTag(environmentUser);
     const isAddTag = await inquirer.askAddTag(tagging.nextTag);
     if (isAddTag.tag) {

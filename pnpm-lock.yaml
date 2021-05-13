@@ -4,6 +4,7 @@ dependencies:
   clui: 0.3.6
   figlet: 1.5.0
   inquirer: 8.0.0
+  minimist: 1.2.5
   simple-git: 2.38.1
 lockfileVersion: 5.2
 packages:
@@ -285,6 +286,10 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==
+  /minimist/1.2.5:
+    dev: false
+    resolution:
+      integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
   /ms/2.1.2:
     dev: false
     resolution:
@@ -427,4 +432,5 @@ specifiers:
   clui: ^0.3.6
   figlet: ^1.5.0
   inquirer: ^8.0.0
+  minimist: ^1.2.5
   simple-git: ^2.38.1
