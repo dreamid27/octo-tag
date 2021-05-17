@@ -1,14 +1,14 @@
 {
   "name": "octo-tag",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Octo-tag is library to help you versioning, and automatically add tag to git",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Muhammad Al Faris",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.1",
