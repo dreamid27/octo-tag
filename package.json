@@ -1,6 +1,6 @@
 {
   "name": "octo-tag",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Octo-tag is library to help you versioning, and automatically add tag to git",
   "main": "index.js",
   "type": "module",
